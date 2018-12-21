@@ -8,6 +8,8 @@ namespace SuperA.Models.Maps
         public LoginUserMap()
         {
             CreateMap<User, LoginModel>();
+
+            CreateMap<LoginModel, User>();
         }
     }
 }

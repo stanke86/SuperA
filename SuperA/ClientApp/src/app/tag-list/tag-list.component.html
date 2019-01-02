@@ -1,0 +1,29 @@
+<h1>Tags</h1>
+
+<p>
+  <a [routerLink]="['create']">
+    <span class='glyphicon glyphicon-plus'></span> Create
+  </a>
+</p>
+
+<table class="table">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let tag of tags">
+    <td>{{tag.id}}</td>
+    <td>{{tag.name}}</td>
+    <td>{{tag.type==0?"Service":"City"}}</td>
+    <td>
+      <a [routerLink]="['edit',tag.id]">
+        <span class='glyphicon glyphicon-edit'></span> Edit
+      </a>
+      <a [routerLink]="['delete']">
+        <span class='glyphicon glyphicon-remove'></span> Delete
+      </a>
+    </td>
+  </tr>
+</table>

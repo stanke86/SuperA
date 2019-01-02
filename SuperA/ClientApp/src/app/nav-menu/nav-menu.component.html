@@ -28,6 +28,11 @@
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/tags"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-tags'></span> Tags
+                    </a>
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/login"]' (click)='collapse()'>
                         <span class='glyphicon glyphicon-log-in'></span> Login
                     </a>

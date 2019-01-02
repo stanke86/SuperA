@@ -1,0 +1,17 @@
+<h1>Create Tag</h1>
+<hr>
+<form [formGroup]="createTagForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" name="Name" id="Name" class="form-control" placeholder="Name" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label for="Type">Type</label>
+    <select name="Type" id="Type" class="form-control" formControlName="type">
+      <option value="0">Service</option>
+      <option value="1">City</option>
+    </select>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-success">Save</button>
+</form>

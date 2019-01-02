@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -24,6 +25,9 @@ namespace SuperA
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper();
+
+            services.AddDbContext<Core.SuperADbContext>(opt =>
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

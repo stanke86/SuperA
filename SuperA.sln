@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperA", "SuperA\SuperA.csproj", "{7AD06E02-A822-4CC5-ACDF-B8D6B147DB40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperA.Core", "SuperA.Core\SuperA.Core.csproj", "{378CB10B-B646-4441-BE39-AB82CB4B3FB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperA.Core", "SuperA.Core\SuperA.Core.csproj", "{378CB10B-B646-4441-BE39-AB82CB4B3FB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
